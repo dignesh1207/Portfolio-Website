@@ -36,7 +36,7 @@ function Navbar() {
             </li>
           ))}
           <li>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="navbar__resume-btn">
+            <a href="/public/resume.pdf" target="_blank" rel="noopener noreferrer" className="navbar__resume-btn">
               Resume ↗
             </a>
           </li>
