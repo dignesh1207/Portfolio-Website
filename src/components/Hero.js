@@ -33,7 +33,7 @@ function Hero() {
         <div className="hero__actions">
           <a href="#projects" className="hero__btn hero__btn--primary">View My Work</a>
           <a
-            href="/resume.pdf"
+            href="/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hero__btn hero__btn--secondary"

@@ -12,12 +12,18 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-    // Replace with your form endpoint (Formspree, EmailJS, etc.)
-    // await fetch('https://formspree.io/f/YOUR_ID', { method: 'POST', body: JSON.stringify(form) })
-    setTimeout(() => {
+    try {
+      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error('Failed');
       setStatus('sent');
       setForm({ name: '', email: '', message: '' });
-    }, 1200);
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -70,6 +76,7 @@ function Contact() {
               type="submit"
               className={`contact__submit ${status === 'sending' ? 'contact__submit--loading' : ''} ${status === 'sent' ? 'contact__submit--sent' : ''}`}
               disabled={status === 'sending' || status === 'sent'}
+            onClick={status === 'error' ? () => setStatus('idle') : undefined}
             >
               {status === 'idle' && 'Send Message →'}
               {status === 'sending' && 'Sending…'}

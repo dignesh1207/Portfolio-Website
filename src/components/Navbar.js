@@ -24,9 +24,9 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner">
         <a href="#hero" className="navbar__logo">
-          <span className="navbar__logo-bracket">[</span>
+          <span className="navbar__logo-bracket">&lt;</span>
           <span className="navbar__logo-name">DS</span>
-          <span className="navbar__logo-bracket">]</span>
+          <span className="navbar__logo-bracket">/&gt;</span>
         </a>
 
         <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>

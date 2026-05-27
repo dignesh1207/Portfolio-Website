@@ -8,7 +8,7 @@ function Footer() {
       <div className="container">
         <div className="footer__inner">
           <a href="#hero" className="footer__logo">
-            <span className="footer__logo-bracket">[</span>DS<span className="footer__logo-bracket">]</span>
+            <span className="footer__logo-bracket">&lt;</span>DS<span className="footer__logo-bracket">/&gt;</span>
           </a>
           <p className="footer__copy">
             © {year} — Designed &amp; built by <strong>Dignesh Solanki</strong>
