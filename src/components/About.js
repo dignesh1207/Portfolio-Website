@@ -40,7 +40,7 @@ function About() {
               </div>
             </div>
             <a
-              href="/Resume.pdf"
+              href="Public/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="about__resume-link"
