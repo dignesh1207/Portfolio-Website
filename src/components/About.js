@@ -40,7 +40,7 @@ function About() {
               </div>
             </div>
             <a
-              href=".. /Public/Resume.pdf"
+              href={`${process.env.PUBLIC_URL}/Resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="about__resume-link"

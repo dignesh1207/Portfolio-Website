@@ -27,6 +27,50 @@ const projects = [
   
   {
     id: 3,
+    title: 'TeamSync',
+    description: 'A full-stack team scheduling web app. Members mark weekly availability on a drag-to-select grid, admins see color-coded overlap heatmaps, get smart meeting-time suggestions, and are warned about low-attendance conflicts. JWT auth with admin/member roles.',
+    tags: ['React', 'Vite', 'Express', 'SQLite', 'JWT'],
+    github: 'https://github.com/dignesh1207/teamsync',
+    live: null,
+    featured: true,
+    year: '2026',
+  },
+
+  {
+    id: 4,
+    title: 'AviationExplorer',
+    description: 'A commercial aviation intelligence platform with an aircraft encyclopedia, live flight tracking map, and news feed. Provider-abstraction architecture cleanly swaps mock/free data sources for paid ones (OpenSky, AviationStack), with Stripe-gated free/pro tiers enforced server-side via JWT.',
+    tags: ['React', 'TypeScript', 'Express', 'Prisma', 'Stripe', 'Leaflet'],
+    github: 'https://github.com/dignesh1207/aviation-explorer',
+    live: null,
+    featured: true,
+    year: '2026',
+  },
+
+  {
+    id: 5,
+    title: 'Auth App',
+    description: 'A self-contained Next.js authentication system built from scratch, no NextAuth/Clerk. Email/password auth with bcrypt hashing, required email verification, single-use expiring password-reset tokens, manual OAuth (Google + GitHub) with CSRF-protected state, and JWT sessions in HTTP-only cookies with rate limiting on auth endpoints.',
+    tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'JWT', 'OAuth'],
+    github: 'https://github.com/dignesh1207/Auth-system',
+    live: null,
+    featured: true,
+    year: '2026',
+  },
+
+  {
+    id: 6,
+    title: 'CloudVPN',
+    description: 'A completely free, self-hosted multi-location VPN on AWS EC2 and GCP using WireGuard, with a real-time control center dashboard, Chrome extension for one-click location switching, and Pi-hole ad/malware blocking across 554,000+ domains. Hardened with UFW, Fail2Ban, and SSH key-only auth.',
+    tags: ['WireGuard', 'Node.js', 'Socket.io', 'AWS', 'GCP', 'Pi-hole'],
+    github: 'https://github.com/dignesh1207/selfhosted-vpn',
+    live: null,
+    featured: true,
+    year: '2026',
+  },
+
+  {
+    id: 7,
     title: 'Haunted Library',
     description: 'A 3D game built in Java for COMP 2800 (Software Development). Implemented core game logic, player movement, and object interactions using OOP principles. Handled 3D transformations, lighting, collision detection, and performance optimization. Deployed and managed using Microsoft Azure.',
     tags: ['Java', 'Java 3D', 'OOP', 'Azure', 'Game Dev'],
@@ -37,51 +81,51 @@ const projects = [
   },
   
   {
-    id: 4,
+    id: 8,
     title: 'ExpenseNest',
     description: 'A desktop expense tracker built with Java Swing. Add expenses with a description, amount, and category — then display a full summary with a running total. Features input validation and a clean OOP design with a separate Expense data model.',
     tags: ['Java', 'Java Swing', 'OOP', 'GridLayout'],
-    github: 'https://github.com/dignesh1207',
+    github: 'https://github.com/dignesh1207/ExpenseNest',
     live: null,
     featured: false,
     year: '2024',
   },
-  
+
   {
-    id: 5,
+    id: 9,
     title: 'Notepad Clone',
     description: 'A desktop text editor built with Java Swing, replicating core Notepad functionality. Supports opening and saving .txt files, and includes a Find & Replace dialog to search and replace text across the document.',
     tags: ['Java', 'Java Swing', 'File I/O'],
-    github: 'https://github.com/dignesh1207',
+    github: 'https://github.com/dignesh1207/JAVA-TEXTEDITOR',
     live: null,
     featured: false,
     year: '2025',
   },
-  
+
   {
-    id: 6,
+    id: 10,
     title: 'Flask Todo App',
     description: 'A clean Todo List web app built with Flask and SQLite. Add tasks with due dates, toggle completion, and delete — all persisted in a local database via SQLAlchemy.',
     tags: ['Python', 'Flask', 'SQLite', 'SQLAlchemy'],
-    github: 'https://github.com/dignesh1207',
+    github: 'https://github.com/dignesh1207/Flask-Todo-App',
     live: null,
     featured: false,
     year: '2025',
   },
-  
+
   {
-    id: 7,
+    id: 11,
     title: 'Weather App',
     description: 'A desktop weather app built with Python and PyQt5. Search any city for real-time weather data via OpenWeatherMap API, with temperature display, weather emojis, and robust error handling.',
     tags: ['Python', 'PyQt5', 'OpenWeatherMap API'],
-    github: 'https://github.com/dignesh1207',
+    github: 'https://github.com/dignesh1207/Weather-app',
     live: null,
     featured: false,
     year: '2025',
   },
-  
+
   {
-    id: 8,
+    id: 12,
     title: 'Tic Tac Toe',
     description: 'A Java implementation of Tic Tac Toe with clean OOP design. Tracks X and O moves in separate lists, evaluates all 8 winning combinations, detects draws, and supports full game reset — all driven by a turn-based state machine.',
     tags: ['Java', 'OOP', 'Game Logic', 'ArrayList'],
@@ -91,11 +135,11 @@ const projects = [
     year: '2024',
   },
   {
-    id: 9,
+    id: 13,
     title: 'Work Hours Tracker',
-    description: 'Track work hours by person, workplace, and week with local storage persistence. A clean utility app for logging and reviewing weekly work schedules.',
-    tags: ['JavaScript', 'HTML', 'CSS', 'LocalStorage'],
-    github: 'https://github.com/dignesh1207',
+    description: 'Track work hours by person, workplace, and week — now with server-side database storage. A clean utility app for logging and reviewing weekly work schedules.',
+    tags: ['JavaScript', 'HTML', 'CSS', 'Node.js'],
+    github: 'https://github.com/dignesh1207/work-hours-tracker-v2',
     live: null,
     featured: false,
     year: '2025',
