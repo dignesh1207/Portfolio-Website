@@ -36,7 +36,7 @@ function Navbar() {
             </li>
           ))}
           <li>
-            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="navbar__resume-btn">
+            <a href={`${process.env.PUBLIC_URL}/Resume.pdf`} target="_blank" rel="noopener noreferrer" className="navbar__resume-btn">
               Resume ↗
             </a>
           </li>
